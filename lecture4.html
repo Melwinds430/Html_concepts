@@ -1,0 +1,89 @@
+<!-- Tables in html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    <table border="1"> <!-- Table container-->
+        <caption>Monthly Saving</caption> <!-- Table title -->
+
+        <thead>
+            <tr>
+                <th>Month</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Janauary</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>$200</td>
+            </tr>
+            <tr>
+                <td>March</td>
+                <td>$300</td>
+            </tr>            
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>$600</td>
+            </tr>
+        </tfoot>
+    </table>
+<br>
+    <table border="1">
+        <caption>Student Details</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th colspan="2">Contact Information</th> <!-- This spans 2 columns -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>john@email.com</td>
+                <td>555-1234</td>
+            </tr>
+        </tbody>
+    </table>
+<br>
+
+<table border="1">
+    <!-- Header Row -->
+    <tr>
+        <th>Department</th>
+        <th>Employee</th>
+        <th>Salary</th>
+    </tr>
+    
+    <!-- First Department (Electronics) with two employees -->
+    <tr>
+        <td rowspan="2">Electronics</td>  <!-- This spans 2 rows -->
+        <td>Alice</td>
+        <td>$50,000</td>
+    </tr>
+    <tr>
+        <!-- Department cell is occupied by rowspan above -->
+        <td>Charlie</td>
+        <td>$55,000</td>
+    </tr>
+    
+    <!-- Second Department (IT) with one employee -->
+    <tr>
+        <td>IT</td>
+        <td>Bob</td>
+        <td>$60,000</td>
+    </tr>
+</table>
+</body>
+</html>

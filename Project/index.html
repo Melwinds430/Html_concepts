@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Coding Journey | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="logo"> &lt;CodeJourney/&gt;</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Melwin</span></h1>
+            <p class="tagline">Aspiring Web Developer | HTML & CSS Enthusiast</p>
+            <div class="code-quote">
+                <code>&lt;h1&gt;Turning Ideas into Reality&lt;/h1&gt;</code>
+            </div>
+            <a href="#projects" class="btn">See My Work ↓</a>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="skills">
+        <h2> My Superpowers</h2>
+        <div class="skill-grid">
+            <div class="skill-card">
+                <div class="skill-icon"></div>
+                <h3>HTML5</h3>
+                <div class="skill-bar">
+                    <div class="skill-level html">90%</div>
+                </div>
+                <p>Semantic tags, Forms, Tables</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"></div>
+                <h3>CSS3</h3>
+                <div class="skill-bar">
+                    <div class="skill-level css">85%</div>
+                </div>
+                <p>Flexbox, Grid, Animations</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🔧</div>
+                <h3>Responsive</h3>
+                <div class="skill-bar">
+                    <div class="skill-level responsive">80%</div>
+                </div>
+                <p>Mobile-first design</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CODE SNIPPETS SHOWCASE (Innovative Part) -->
+    <section id="projects" class="code-showcase">
+        <h2> My Favorite Code Snippets</h2>
+        <p class="subtitle">Click on any card to see the preview!</p>
+        
+        <div class="snippet-grid">
+            <!-- Snippet 1: Form -->
+            <div class="snippet-card">
+                <div class="snippet-preview">
+                    <div class="mini-form">
+                        <input type="text" placeholder="Name" readonly>
+                        <button disabled>Submit</button>
+                    </div>
+                </div>
+                <div class="snippet-code">
+                    <pre>
+&lt;form&gt;
+  &lt;input&gt;
+  &lt;button&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+                    </pre>
+                </div>
+                <div class="snippet-footer">
+                    <span class="tag">HTML</span>
+                    <span class="tag">Form</span>
+                </div>
+            </div>
+
+            <!-- Snippet 2: Card -->
+            <div class="snippet-card">
+                <div class="snippet-preview card-demo">
+                    <div class="mini-card">
+                        <h4>Card Title</h4>
+                        <p>Card content here</p>
+                    </div>
+                </div>
+                <div class="snippet-code">
+                    <pre>
+&lt;div class="card"&gt;
+  &lt;h4&gt;Title&lt;/h4&gt;
+  &lt;p&gt;Content&lt;/p&gt;
+&lt;/div&gt;
+                    </pre>
+                </div>
+                <div class="snippet-footer">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                </div>
+            </div>
+
+            <!-- Snippet 3: Table -->
+            <div class="snippet-card">
+                <div class="snippet-preview">
+                    <table class="mini-table">
+                        <tr><th>Name</th><th>Age</th></tr>
+                        <tr><td>John</td><td>25</td></tr>
+                    </table>
+                </div>
+                <div class="snippet-code">
+                    <pre>
+&lt;table&gt;
+  &lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;John&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+                    </pre>
+                </div>
+                <div class="snippet-footer">
+                    <span class="tag">HTML</span>
+                    <span class="tag">Table</span>
+                </div>
+            </div>
+
+            <!-- Snippet 4: Navigation -->
+            <div class="snippet-card">
+                <div class="snippet-preview">
+                    <div class="mini-nav">
+                        <a href="#">Home</a> | <a href="#">About</a>
+                    </div>
+                </div>
+                <div class="snippet-code">
+                    <pre>
+&lt;nav&gt;
+  &lt;a href="#"&gt;Home&lt;/a&gt;
+  &lt;a href="#"&gt;About&lt;/a&gt;
+&lt;/nav&gt;
+                    </pre>
+                </div>
+                <div class="snippet-footer">
+                    <span class="tag">HTML</span>
+                    <span class="tag">Nav</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LEARNING TIMELINE -->
+    <section class="timeline">
+        <h2> My Learning Journey</h2>
+        <div class="timeline-container">
+            <div class="timeline-item">
+                <div class="timeline-date">Week 1-2</div>
+                <div class="timeline-content">
+                    <h3>HTML Basics</h3>
+                    <p>Tags, attributes, forms, tables</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">Week 3-4</div>
+                <div class="timeline-content">
+                    <h3>CSS Fundamentals</h3>
+                    <p>Colors, fonts, box model</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">Week 5-6</div>
+                <div class="timeline-content">
+                    <h3>Flexbox & Grid</h3>
+                    <p>Responsive layouts</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+        <h2> Let's Connect</h2>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3>Find me on:</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link"> GitHub</a>
+                    <a href="#" class="social-link"> LinkedIn</a>
+                    <a href="#" class="social-link"> Twitter</a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h3>Send a message:</h3>
+                <form>
+                    <input type="text" placeholder="Your name">
+                    <input type="email" placeholder="Your email">
+                    <textarea rows="3" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn">Send </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2024 My Coding Journey | Built with  using HTML & CSS only</p>
+        <p class="html-note">This page is 100% HTML + CSS - No JavaScript!</p>
+    </footer>
+</body>
+</html>

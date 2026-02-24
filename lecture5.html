@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+<!-- COMPLETE FORM STRUCTURE -->
+<form action="/submit" method="post">              <!-- Form container -->
+    
+    <!-- TEXT INPUTS -->
+    <fieldset>                                      <!-- Group related fields -->
+        <legend>Personal Info</legend>              <!-- Fieldset caption -->
+        
+        <label for="name">Name:</label>            <!-- Label for input -->
+        <input type="text" id="name" name="name" placeholder="John"> <!-- Text input -->
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"> <!-- Password -->
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"> <!-- Email input -->
+        
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone"> <!--  Telephone -->
+        
+        <label for="url">Website:</label>
+        <input type="url" id="url" name="url">     <!--  URL input -->
+        
+        <label for="search">Search:</label>
+        <input type="search" id="search" name="search"> <!--  Search field -->
+        
+        <label for="number">Age:</label>
+        <input type="number" id="number" name="number" min="1" max="100"> <!--  Number -->
+        
+        <label for="range">Volume:</label>
+        <input type="range" id="range" min="0" max="100"> <!-- Slider -->
+    </fieldset>
+    
+    <!-- DATE/TIME INPUTS -->
+    <fieldset>
+        <legend>Date & Time</legend>
+        
+        <label for="date">Date:</label>
+        <input type="date" id="date">              <!--  Date picker -->
+        
+        <label for="time">Time:</label>
+        <input type="time" id="time">              <!--  Time picker -->
+        
+        <label for="datetime">DateTime:</label>
+        <input type="datetime-local" id="datetime"> <!--  Local datetime -->
+        
+        <label for="month">Month:</label>
+        <input type="month" id="month">            <!--  Month picker -->
+        
+        <label for="week">Week:</label>
+        <input type="week" id="week">              <!-- Week picker -->
+    </fieldset>
+    
+    <!-- CHOICE INPUTS -->
+    <fieldset>
+        <legend>Choices</legend>
+        
+        <!-- RADIO BUTTONS (Select one) -->
+        <input type="radio" id="male" name="gender" value="male"> <!--  Radio -->
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        
+        <br>
+        
+        <!-- CHECKBOXES (Select multiple) -->
+        <input type="checkbox" id="sports" value="sports"> <!-- Checkbox -->
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="music" value="music">
+        <label for="music">Music</label>
+        
+        <!-- DROPDOWN SELECT -->
+        <label for="country">Country:</label>
+        <select id="country" name="country">       <!--  Dropdown -->
+            <option value="usa">USA</option>        <!--  Option -->
+            <option value="canada">Canada</option>
+            <optgroup label="Europe">               <!--  Option group -->
+                <option value="uk">UK</option>
+                <option value="france">France</option>
+            </optgroup>
+        </select>
+        
+        <!-- MULTI-SELECT -->
+        <label for="colors">Colors:</label>
+        <select id="colors" multiple size="3">     <!-- Multi-select -->
+            <option>Red</option>
+            <option>Blue</option>
+            <option>Green</option>
+        </select>
+        
+        <!-- DATALIST (Auto-complete) -->
+        <label for="browser">Browser:</label>
+        <input list="browsers" id="browser">       <!--  Input with datalist -->
+        <datalist id="browsers">                    <!--  Datalist options -->
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Edge">
+        </datalist>
+    </fieldset>
+    
+    <!-- TEXT AREA (Multi-line input) -->
+    <label for="message">Message:</label>
+    <textarea id="message" rows="4" cols="50">     <!--  Multi-line text -->
+        Default text here
+    </textarea>
+    
+    <!-- BUTTONS -->
+    <button type="submit">Submit</button>          <!--  Submit button -->
+    <button type="reset">Reset</button>            <!--  Reset button -->
+    <button type="button">Click me</button>        <!--  Generic button -->
+    <input type="submit" value="Send">             <!--  Submit input -->
+    <input type="reset" value="Clear">             <!--  Reset input -->
+    <input type="button" value="Press">            <!--  Button input -->
+    
+    <!-- FILE UPLOAD -->
+    <label for="file">Upload file:</label>
+    <input type="file" id="file" multiple>         <!--  File upload -->
+    
+    <!-- HIDDEN FIELD -->
+    <input type="hidden" name="userid" value="123"> <!-- Hidden data -->
+    
+    <!-- COLOR PICKER -->
+    <label for="color">Pick color:</label>
+    <input type="color" id="color">                 <!--  Color picker -->
+    
+    <!-- PROGRESS & METER -->
+    <progress value="70" max="100">70%</progress>  <!--  Progress bar -->
+    <meter value="0.6">60%</meter>                 <!--  Gauge meter -->
+    
+    <!-- OUTPUT -->
+    <output name="result">0</output>               <!-- Calculation result -->
+    
+</form>
+</body>
+</html>
